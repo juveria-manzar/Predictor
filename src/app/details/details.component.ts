@@ -102,10 +102,4 @@ export class DetailsComponent implements OnInit , OnDestroy{
     this.sub4.unsubscribe();
     this.sub5.unsubscribe();
   }
-
-}
-
-    })
-  }
-
 }
