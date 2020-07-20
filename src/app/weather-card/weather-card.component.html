@@ -2,20 +2,14 @@
     <!-- TODO: make the city name dynamic -->
     <span class="city-name__text">Paris</span>
     <div class="weather-icon__container" [ngSwitch]="true">
-
         <svg *ngSwitchCase="condition === 'Clouds'">
           </svg>
-
         <svg *ngSwitchCase="condition === 'Rain' || condition === 'Drizzle'">
           </svg>
-
         <svg *ngSwitchCase="condition === 'Storm'">
           </svg>
-
-
         <svg *ngSwitchCase="condition === 'Sunny' || condition === 'Clear'">
           </svg>
-
         <svg *ngSwitchCase="condition === 'Fog'"></svg>
     </div>
     <div class="temperature-text__container">
@@ -28,7 +22,6 @@
             <svg class="min-arrow__icon" viewBox="188.5 807 21 21">
                   <path fill="#00ff9b" d="M209.5 817.5h-21L199 828z" data-name="Min Arrow"/>
               </svg>
-
             <span class="min-temperature__text">{{ minTemp }}</span>
             <span class="min__text">Min</span>
         </div>
