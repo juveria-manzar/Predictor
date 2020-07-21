@@ -17,4 +17,10 @@ export class WeatherService {
       `${this.forcastURL}${city}&units=${metric}&APPID=${this.appID}`
     ).pipe( (first()))
   }
+
+ getForecast(city: string, metric: 'metric' | 'imperial' = 'metric'): Observable<any> {
+    return this.http.get(
+      `${this.forcastURL}${city}&units=${metric}&APPID=${this.appID}`)
+      .pipe(first(), map((weather) => weather['list']));
+  }
 }
