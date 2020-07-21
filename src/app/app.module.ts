@@ -8,6 +8,7 @@ import { WeatherCardComponent } from './weather-card/weather-card.component';
 import { AddCardComponent } from './add-card/add-card.component';
 import { DetailsComponent } from './details/details.component';
 import {NguiAutoCompleteModule} from '@ngui/auto-complete';
+import { AddComponent } from './add/add.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {NguiAutoCompleteModule} from '@ngui/auto-complete';
     HomeComponent,
     WeatherCardComponent,
     AddCardComponent,
-    DetailsComponent
+    DetailsComponent,
+    AddComponent
   ],
   imports: [
     NguiAutoCompleteModule,

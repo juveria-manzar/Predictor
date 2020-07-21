@@ -7,7 +7,21 @@ import {first, switchMap} from 'rxjs/operators';
 })
 export class FbService {
 
-  constructor() { }
+  constructor(public auth: AngularFireLiteAuth, public fs: AngularFireLiteFirestore) {
+  }
+
+  isAuth() {
+    return this.auth.isAuthenticated();
+  }
+
+  signin(email, pass) {
+    return this.auth.signin(email, pass);
+  }
+
+  signup(email, pass) {
+    return this.auth.signup(email, pass);
+  }
+
 
   getCities() {
     return this.auth.uid().pipe(switchMap((uid) => {
@@ -24,3 +38,4 @@ export class FbService {
       }), first());
   }
 }
+
