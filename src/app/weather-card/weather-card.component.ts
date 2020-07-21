@@ -1,10 +1,10 @@
 import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
 import {Router} from '@angular/router';
-import {WeatherService} from '../../services/weather/weather.service';
-import {UiService} from '../../services/ui/ui.service';
+import {WeatherService} from '../services/weather/weather.service';
+import {UiService} from '../services/ui/ui.service';
 import {Subscription} from 'rxjs';
 import {first} from 'rxjs/operators';
-import {FbService} from '../../services/fb/fb.service';
+import {FbService} from '../services/fb/fb.service';
 
 @Component({
   selector: 'app-weather-card',
