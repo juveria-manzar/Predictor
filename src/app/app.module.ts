@@ -13,6 +13,7 @@ import {environment} from '../environments/environment';
 import {NguiAutoCompleteModule} from '@ngui/auto-complete';
 import { AddComponent } from './add/add.component';
 import {FormsModule} from '@angular/forms';
+import { LoginComponent } from './login/login.component';
 // import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
@@ -22,7 +23,8 @@ import {FormsModule} from '@angular/forms';
     WeatherCardComponent,
     AddCardComponent,
     DetailsComponent,
-    AddComponent
+    AddComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
